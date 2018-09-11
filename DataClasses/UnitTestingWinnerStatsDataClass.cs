@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataClasses
 {
-    public  enum UnitTestTypeENUM
+    public class UnitTestingWinnerStatsDataClass
     {
-        Exit,
-        ExampleMargin,
-        ExampleRace,
-        Question
-
+        public decimal Percent { get; set; }
+        public int Total { get; set; }
     }
 }

@@ -28,6 +28,10 @@ namespace UIConsoleUnitTesting
                     HorseRacingTestExample.TestRace();
                     run();
                     break;
+                case DataClasses.UnitTestTypeENUM.Question:
+                    HorseRacingQuestion.TestRace();
+                    run();
+                    break;
                 case DataClasses.UnitTestTypeENUM.Exit:                    
                     break;
             }
@@ -40,6 +44,7 @@ namespace UIConsoleUnitTesting
             Console.WriteLine("What would you like to test?");
             Console.WriteLine(" - Example margin");
             Console.WriteLine(" - Example race");
+            Console.WriteLine(" - Question");
             string line = Console.ReadLine();
             string value = line.Replace(" ", String.Empty).Trim().ToLower();
             if (value.Equals("examplemargin"))
@@ -47,6 +52,9 @@ namespace UIConsoleUnitTesting
 
             if (value.Equals("examplerace"))
                 return DataClasses.UnitTestTypeENUM.ExampleRace;
+
+            if (value.Equals("question"))
+                return DataClasses.UnitTestTypeENUM.Question;
 
             if (value.Equals("exit"))
                 return DataClasses.UnitTestTypeENUM.Exit;

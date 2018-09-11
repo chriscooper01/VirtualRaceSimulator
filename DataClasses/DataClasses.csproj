@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="HorseDataClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestingWinnerStatsDataClass.cs" />
     <Compile Include="UnitTestTypeENUM.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

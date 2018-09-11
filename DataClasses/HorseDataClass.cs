@@ -14,7 +14,7 @@ namespace DataClasses
         public int Denominator { get; set; }
         public decimal ImpliedProbability { get { return calImpliedProbability(); } }
         public decimal PercentageChance { get; set; }
-
+        public int PercentageChanceFull { get { return (int)Math.Round(PercentageChance, 0);  } }
 
         private decimal calImpliedProbability()
         {
