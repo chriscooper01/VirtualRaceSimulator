@@ -44,7 +44,7 @@ namespace UIConsoleUnitTesting
             Console.WriteLine("What would you like to test?");
             Console.WriteLine(" - Example margin");
             Console.WriteLine(" - Example race");
-            Console.WriteLine(" - Question");
+            Console.WriteLine(" - Technical test");
             string line = Console.ReadLine();
             string value = line.Replace(" ", String.Empty).Trim().ToLower();
             if (value.Equals("examplemargin"))
@@ -53,7 +53,7 @@ namespace UIConsoleUnitTesting
             if (value.Equals("examplerace"))
                 return DataClasses.UnitTestTypeENUM.ExampleRace;
 
-            if (value.Equals("question"))
+            if (value.Equals("technicaltest"))
                 return DataClasses.UnitTestTypeENUM.Question;
 
             if (value.Equals("exit"))
